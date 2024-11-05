@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body >
+    <div style="background-color: #ece7ed; border-radius: 0%">
+      <h2 style="text-align: center">Registration Form</h2>
+  <form>
+        <label for="fname">First Name</label>
+        <br />
+        <input
+          type="text"
+          name="First_Name"
+          id="fname"
+          placeholder="enter your first name"
+          
+          autocomplete="off"
+        />
+        <br />
+        <br />
+        <label for="lname">Last Name</label>
+        <br />
+        <input
+          type="text"
+          name="Last_Name"
+          id="lname"
+          placeholder="enter your last name"
+          
+        /><br />
+        <br />
+        <label>Gender</label><br />
+        
+        <input type="radio" name="gender" id="gender" value="male">
+        <label for="gender">male</label>
+        <input type="radio" name="gender" id="gender"  value="female">
+        <label for="gender">female</label>
+        <br /><br />
+        <label for="dob">Date Of Birth</label><br />
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          placeholder="dd-mm-yyyy"
+        /><br /><br />
+        <label for="tel">Mobile Number</label><br />
+        <input
+          type="tel"
+          name="mobile_number"
+          id="tel"
+          placeholder="enter your Mobile number"
+          pattern="[0-9]{10}" 
+          
+        /><br /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter your email"
+          
+        /><br /><br />
+        <label for="resume">Upload Your Resume</label><br />
+        <input type="file" name="resume" id="resume" /><br />
+        <p>Choose place</p>
+        <input type="radio" id="place" value="huzurabad" name="place"><label for="place">huzurabad</label>
+        <input type="radio" id="place" value="warangal" name="place"><label for="place">warangal</label>
+        <input type="radio" id="place" value="karimnagar" name="place"><label for="place">karimnagar</label>
+        <input type="radio" id="place" value="hyd" name="place"><label for="place">hyd</label>
+        <br><br>
+        <label for="option">chosse options</label>
+        <select name="option" id="option" required>
+        <option value="">--select--</option>
+        <optgroup label="--select--">
+          <option value="html">html</option>
+          <option value="css">css</option>
+          <option value="js">js</option>
+        </optgroup>
+        </select><br><br>
+        <label for="clrs">chosse</label>
+        <input list="colors" name="clrs" id="clrs">
+        <datalist id="colors">
+          <option value="black">black</option>
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+        </datalist>
+
+        <p>Choose fav color</p>
+        <input type="checkbox" name="color1" id="color" value="red">
+        <label for="color">red</label>
+        <input type="checkbox" name="color2" id="color" value="blue">
+        <label for="blue">blue</label>
+        <input type="checkbox" name="color3" id="color" value="green">
+        <label for="green">green</label>
+        <br> <br>
+        <label for="url">enter any url</label>
+        <input type="url" name="url" id="url"> <br> <br>
+        <label for="address">Address</label><br />
+        <textarea
+          type="text"
+          name="address"
+          id="address"
+          placeholder="enter your address"
+          row="2"
+        
+        ></textarea>
+        <br /><br />
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          
+          placeholder="enter your password"
+        /><br /><br />
+        <label for="confrim-password">confrim password</label><br />
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          
+          placeholder="confrim your password"
+        /> <br><br>
+        <input type="submit" value="Register" />
+        <p style="text-align: center">
+          Already have an account?<a href="">Login</a>
+        </p>
+        
+      </form>
+    </div>
+  </body>
+</html>
