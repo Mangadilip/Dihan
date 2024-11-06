@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>form</legend>
+    <form action="./chicken_rolls.html">
+        <input type="image" src="./images/10kimages/10000image.jpg" height="100" formaction="./CHINESE.html"><br><br>
+        <input type="submit"><br><br>
+        <input type="submit" value="navigate" formaction="./amazon_table.html">
+
+
+        <label for="option">chosse options</label>
+        <select name="option" id="option" required>
+        <option value="">--select--</option>
+        <optgroup label="">
+          <option value="html">html</option>
+          <option value="css">css</option>
+          <option value="js">js</option>
+        </optgroup>
+        </select>
+        
+        <br><br>
+        <label for="clrs">chosse</label>
+        <input list="colors" name="clrs" id="clrs">
+        <datalist id="colors">
+          <option value="black">black</option>
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+        </datalist>
+        <input type="reset">
+    </form></fieldset>
+    <picture>
+        <source  media="(min-width:620px)" srcset="./images/billa.webp" heigth="100">
+        <source  media="(min-width:480px)" srcset="./images/10kimages/10000image.jpg" heigth="100">
+        <source  media="(min-width:320px)" srcset="./images/dog.jpg" heigth="100">
+        <img src="./images/blackdog.jpg" alt="" height="100">
+    </picture>
+</body>
+</html>
